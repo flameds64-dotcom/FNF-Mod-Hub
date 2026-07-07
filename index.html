@@ -13,31 +13,45 @@
             padding: 20px;
         }
         h1 { color: #ff0055; }
-        .game-container {
-            margin: 20px auto;
-            max-width: 800px;
-            border: 4px solid #ff0055;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        .card {
+            background: #1a1a1a;
+            padding: 20px;
             border-radius: 10px;
-            overflow: hidden;
-            background: #000;
+            border: 4px solid #ff0055;
         }
-        <iframe src="https://github.io" width="800" height="600" frameborder="0" allowfullscreen></iframe>
-
-
-            width: 100%;
-            height: 600px;
-            border: none;
+        .play-btn {
+            background: #ff0055;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
         }
+        .play-btn:hover { background: #cc0044; }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to My FNF Mod Arcade!</h1>
+    <h1>Welcome to FNF Mod Hub</h1>
     <p>Play Friday Night Funkin' mods right on your Chromebook below.</p>
 
-    <div class="game-container">
-        <iframe src="https://github.io" allowfullscreen="true"></iframe>
+    <div class="grid">
+        <div class="card">
+            <h3>VS Shaggy Mod</h3>
+            <p>Click below to open the game in full-screen arcade mode!</p>
+            <a href="shaggy/index.html" class="play-btn">PLAY GAME</a>
+        </div>
     </div>
 
 </body>
 </html>
+
